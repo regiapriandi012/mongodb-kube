@@ -1,6 +1,7 @@
 # Build MongoDB Instance on Kubernetes
+Build a mongodb instance on a kubernetes cluster using a statefulset configuration, it works for microservice-based applications on kubernetes to be able to use mongodb instances without having to create a database in the cloud.
 
-# Technology Used
+## Technology Used
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 
@@ -17,8 +18,8 @@ $ kubectl apply -f .
 ## Access the Instance
 ```
 $ kubectl get pods
-NAME          READY   STATUS     RESTARTS   AGE
-mongodb-0     1/1     Running    1          4d1h
+NAME                              READY   STATUS    RESTARTS        AGE
+mongodb-0                         1/1     Running   1 (13m ago)     6h44m
 $ kubectl exec -it mongodb-0 -- sh
 # mongo
 MongoDB shell version v4.0.8
