@@ -14,6 +14,13 @@ $ vi secret.yaml
 ```
 $ cd mongodb-instance-kubernetes
 $ kubectl apply -f .
+configmap/mongodb-configmap created
+persistentvolume/mongodb-pv created
+persistentvolumeclaim/mongodb-pvc created
+secret/mongodb-secret created
+service/mongodb created
+statefulset.apps/mongodb created
+storageclass.storage.k8s.io/mongodb-storageclass created
 ```
 ## Access the Instance
 ```
